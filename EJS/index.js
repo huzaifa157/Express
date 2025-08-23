@@ -91,3 +91,8 @@ app.listen(port,()=>{
 // <%= for Outputs the value into the template (HTML escaped) %>
 
 // <% 'Scriptlet' tag, for control-flow means for loops and condition statements etc, no output %>
+
+                                    // include 
+                                          
+//   <%- include("folder-name/file") %> in EJS is used to reuse common parts of your site (like headers, navbars, or footers) 
+//   so you don’t repeat the same code in every page.
