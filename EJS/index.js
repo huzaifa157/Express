@@ -48,6 +48,15 @@ app.get("/" , (req,res)=>{
 /* In Express + EJS, the function .render() is what actually renders (converts) an EJS file into HTML and then sends it to the browser.*/
 })
 
+app.get("/ludo", (req,res)=>{
+    let dicevalue = Math.floor(Math.random()*6)+1;
+    res.render("rolldice" , {num : dicevalue})
+})
+
+
+
+
+
 
 app.listen(port,()=>{
     console.log(`listening on port ${port}`);
