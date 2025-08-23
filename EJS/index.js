@@ -53,6 +53,10 @@ app.get("/ludo", (req,res)=>{
     res.render("rolldice" , {num : dicevalue})
 })
 
+app.get("/instagram/:username", (req, res) => {
+  const { username } = req.params;
+  res.render("instagram", { username });
+});
 
 
 
