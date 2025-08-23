@@ -4,37 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram</title>
-  <style>
-    img {
-      height: 200px;
-      width: 200px;
-      border-radius: 10px;
-    }
-
-    /* Container holding all posts */
-    .posttt {
-      display: flex;
-      flex-wrap: wrap;   /* so posts go to next line */
-      gap: 20px;         /* spacing between posts */
-    }
-
-    /* Each single post card */
-    .post {
-      display: flex;
-      flex-direction: column; /* stack image + likes/comments vertically */
-      align-items: center;    /* center content */
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 10px;
-      width: 220px;
-      background: #fafafa;
-    }
-
-    .post h4 {
-      margin: 8px 0 0 0;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css">
+  
 </head>
 <body>
   <h1>Profile Name : <%= data.name %></h1>
