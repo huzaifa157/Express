@@ -1,29 +1,3 @@
-// 🌐 What is EJS?
-
-// EJS stands for Embedded JavaScript templating.
-//    🔹It is a templating engine for Node.js + Express.
-//    🔹It allows you to write HTML with embedded JavaScript code.
-//    🔹With EJS, you can dynamically generate HTML pages using data from your server.
-
-// 🔧 How it works with Express
-
-//    🔹// Install EJS
-//    🔹// npm install ejs
-
-// Tell Express to use EJS as the view engine:
-
-// import express from "express";
-// const app = express();
-
-// app.set("view engine", "ejs"); // setting EJS as template engine
-
-// 📌 Why use EJS?
-
-// Helps keep HTML separate from backend logic.
-// Makes pages dynamic (showing data from DB, forms, etc.).
-// Easy to integrate with Express.
-
-
 
 const express = require("express")
 const app = express();
@@ -62,12 +36,7 @@ let {username} = req.params;
 const instaData = require("./data.json")
 
 let data = instaData[username]
- if(data){
-      res.render("instagram" , {data});
- } else{
-    res.render("err")
- }
-
+  res.render("instagram" , {data});
 });
 
 
@@ -78,9 +47,3 @@ app.listen(port,()=>{
     console.log(`listening on port ${port}`);
 })
 
-
-        //    Tags 
-
-// <%= for Outputs the value into the template (HTML escaped) %>
-
-// <% 'Scriptlet' tag, for control-flow means for loops and condition statements etc, no output %>
