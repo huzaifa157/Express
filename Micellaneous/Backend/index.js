@@ -21,7 +21,7 @@ app.get("/register", (req, res) => {
 app.post("/register", (req, res) => {
 
     let {user , password} = req.body;
-     res.send(`Its Get response Welcome dear ${user}`);
+     res.send(`Its post response Welcome dear ${user}`);
 
     res.send("It's Post response");
     console.log(req.body)
