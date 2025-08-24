@@ -1,0 +1,133 @@
+<!-- CRUD is the foundation of RESTful APIs and databases.
+
+CRUD means the 4 basic operations we perform with data in applications:
+
+C → Create
+
+Add new data.
+Example: Registering a new user, posting a new article.
+HTTP Method → POST
+
+R → Read
+
+Get or retrieve data.
+Example: Viewing a user profile, fetching posts.
+HTTP Method → GET
+
+U → Update
+
+Modify existing data.
+Example: Editing a profile, updating a post.
+HTTP Method → PUT or PATCH
+PUT → replaces the whole resource.
+PATCH → updates part of the resource.
+
+D → Delete
+
+Remove existing data.
+Example: Deleting a post or account.
+HTTP Method → DELETE -->
+
+<!-- 
+
+🌐 HTTP (HyperText Transfer Protocol)
+
+Definition: It is a communication protocol that allows web browsers (clients) and servers to communicate.
+It defines how data is sent and received over the web.
+
+Example: When you type https://www.google.com, your browser sends an HTTP request to Google’s servers, and the server replies with an HTTP response (like HTML, CSS, or JSON). -->
+
+<!-- 
+📌 HTTP Methods (also called HTTP verbs)
+
+These methods tell the server what action the client wants to perform on a resource (like data, file, or page).
+
+The most common HTTP methods are:
+
+GET
+
+Used to request data from the server.
+Example: When you open a webpage, the browser sends a GET request to fetch HTML.
+👉 Safe (doesn’t change data).
+
+POST
+
+Used to send data to the server.
+Example: Submitting a signup form (username, password).
+👉 Changes the server state (creates new data).
+
+PUT
+
+Used to update/replace existing data on the server.
+Example: Changing your profile picture or editing a post.
+
+PATCH
+
+Used to update part of existing data (not the whole).
+Example: Only updating your username but not other profile info.
+
+DELETE
+
+Used to delete data on the server.
+Example: Deleting a comment or post.
+
+✅ In short:
+
+GET → Retrieve data
+POST → Create data
+PUT → Replace data
+PATCH → Update part of data
+DELETE → Remove data -->
+
+<!-- 
+                        <!-- HTTP response  -->
+
+
+<!-- An HTTP response is the message sent from the server to the client (browser, app, etc.) after the client makes an HTTP request.
+It tells the client what happened with its request.
+
+Structure of an HTTP Response: -->
+<!-- 
+Status Line
+
+Includes the HTTP version + status code + status message.
+Example:
+HTTP/1.1 200 OK
+
+
+Headers
+
+Provide extra information about the response (metadata).
+Examples:
+Content-Type: text/html
+Content-Length: 345
+Set-Cookie: sessionId=1234
+
+
+Body (optional)
+
+The actual data returned by the server (HTML, JSON, image, etc.).
+Example:
+
+{
+  "id": 1,
+  "name": "Huzaifa"
+}
+
+
+Common HTTP Response Status Codes:
+
+1xx (Informational) → Request received, continuing process.
+2xx (Success) → Request was successful.
+200 OK → Success.
+201 Created → New resource created.
+3xx (Redirection) → Client must do something else.
+301 Moved Permanently
+302 Found
+4xx (Client Error) → Problem with client’s request.
+400 Bad Request
+401 Unauthorized
+404 Not Found
+5xx (Server Error) → Problem on the server side.
+500 Internal Server Error
+503 Service Unavailable --> -->

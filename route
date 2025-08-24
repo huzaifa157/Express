@@ -1,0 +1,63 @@
+<!-- 🔹 What is a Route in Web Development?
+
+A route is basically a path (URL) + HTTP method (GET, POST, etc.) that your server listens to and responds with something (like HTML, JSON, or text).
+
+Think of it like directions on a map —
+If you go to /home, you see the home page.
+If you go to /about, you see the about page.
+In Express.js, routes decide what happens when a user visits a certain URL. -->
+
+<!-- 
+
+
+
+What is a Route?
+
+In Express.js, a route defines a path (URL) and the HTTP method (GET, POST, PUT, DELETE, etc.) that your server should respond to.
+
+👉 Example:
+
+app.get("/home", (req, res) => {
+  res.send("Welcome to Home Page");
+});
+
+Here:
+
+/home → is the route (path)
+get → is the HTTP method
+Inside, you define what to do when someone visits http://localhost:3000/home
+
+2. Why Routes?
+
+Routes let you organize different pages or functionalities in your app:
+
+/login → login page
+/register → signup page
+/profile → user profile page
+So, the backend knows which function to run for each URL.
+
+3. Types of Routes in Express
+
+Basic Route:
+
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
+
+Route with Parameters:
+
+app.get("/user/:id", (req, res) => {
+  res.send(`User ID is ${req.params.id}`);
+});
+
+
+Route with Query:
+
+app.get("/search", (req, res) => {
+  res.send(`You searched for ${req.query.q}`);
+});
+
+
+✅ In short:
+A route = Path (URL) + HTTP method + Handler function. -->
