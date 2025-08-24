@@ -1,0 +1,27 @@
+<!-- What is localhost?
+
+localhost is just a special hostname that points to your own computer.
+It always refers to the IP address 127.0.0.1 (loopback address). -->
+
+<!-- So when you open:
+http://localhost:3000
+
+👉 Your browser is actually talking to a server running on your own PC, not the internet. -->
+<!-- 
+How it works
+
+You run a server on your machine (for example Express.js on port 3000).
+app.listen(3000, () => console.log("Server running"));
+
+When you type http://localhost:3000 in your browser:
+
+Browser asks: “Where is localhost?”
+Your system translates it into 127.0.0.1 (your own PC).
+The request is sent back to your own computer.
+Your running server (Node/Express) on port 3000 receives that request and sends back a response. -->
+
+<!-- ✅ In short -->
+
+<!-- localhost = your own computer (IP 127.0.0.1).
+Used for testing servers locally before deploying to the internet.
+localhost:3000 → means port 3000 on your own computer. -->
