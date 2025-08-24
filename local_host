@@ -25,3 +25,37 @@ Your running server (Node/Express) on port 3000 receives that request and sends 
 <!-- localhost = your own computer (IP 127.0.0.1).
 Used for testing servers locally before deploying to the internet.
 localhost:3000 → means port 3000 on your own computer. -->
+
+
+<!-- local host vs ip address -->
+<!-- 
+               127.0.0.1
+
+This is an IP address.
+Known as the loopback address → it always points to your own machine.
+Part of a special reserved range (127.0.0.0 to 127.255.255.255).
+
+So when you type:
+http://127.0.0.1:3000 : Your request never leaves your computer — it loops back to yourself.
+
+🔹 localhost
+
+This is a hostname (domain name).
+It’s mapped to 127.0.0.1 by default (via your system’s hosts file).
+Example: on Windows, check C:\Windows\System32\drivers\etc\hosts, you’ll see a line like:  127.0.0.1   localhost
+
+This means whenever you type localhost, your computer translates it to 127.0.0.1.
+
+🔹 Key Difference
+
+127.0.0.1 → IP address.
+localhost → hostname that usually resolves to 127.0.0.1.
+
+🔹 Fun fact
+Sometimes localhost can also resolve to IPv6 (::1) depending on your system settings, but 127.0.0.1 is always IPv4.
+
+✅ In short:
+
+Both point to your own computer.
+localhost is a name → usually mapped to → 127.0.0.1 (the loopback IP).
+So typing http://localhost:3000 and http://127.0.0.1:3000 normally gives the same result. -->
