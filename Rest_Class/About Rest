@@ -1,0 +1,47 @@
+# REST stands for Representational State Transfer.
+# It’s a style (set of rules) for designing APIs.
+
+# 🔹 In Simple Words
+
+# REST is about how a client (like browser or mobile app) talks to a server using HTTP (like GET, POST, PUT, DELETE).
+
+# 🔹 REST Principles
+
+# Use HTTP methods for actions
+
+# GET → Read data
+# POST → Create data
+# PUT → Update data
+# DELETE → Delete data
+
+# Use URLs (endpoints) for resources
+# Example:
+
+# /users → list of users
+# /users/1 → user with id 1
+
+# Stateless
+
+# Server does not remember previous requests.
+# Each request must contain all needed info (like auth, data).
+# Send/receive data in a standard format
+# Usually JSON is used.
+
+# 🔹 Example of REST API
+
+# Imagine we have a users resource.
+
+# GET /users → Get all users
+# GET /users/1 → Get user with id = 1
+# POST /users → Add a new user
+# PUT /users/1 → Update user with id = 1
+# DELETE /users/1 → Delete user with id = 1
+
+# ✅ In short:
+# REST is just a way to design APIs where we use HTTP methods 
+# (GET, POST, PUT, DELETE) on URLs (resources) and exchange data usually in JSON.
+
+# ✅ In short:
+
+# REST → the concept.
+# RESTful API → an API designed using REST rules (clean URLs, proper HTTP methods, JSON).
