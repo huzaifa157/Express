@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Post</title>
+  <link rel="stylesheet" href="/form.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="form-container">
+
+    <h1>Add New Post</h1>
+    <p> <b>Post Id: <%= post.id %> </b> <p>
+    <h3>Username : <%= post.username %> </h3>
+
+    <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+
+      
+      <textarea name="content" placeholder="Write your post..." required><%= post.content %></textarea>
+      <button type="submit">Submit Post 🚀</button>
+
+    </form>
+
+  </div>
+  
+</body>
+</html>
+

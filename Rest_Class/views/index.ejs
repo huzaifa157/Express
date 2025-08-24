@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quora post</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quora Post</title>
+  <link rel="stylesheet" href="/style.css">
+  <!-- Google Fonts for Professional Look -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="main-heading">Quora Post</h1>
+  <header class="navbar">
 
- <% for(post of posts){ %>
-   
-    <div class="post-container">
-    <h3 class="user"> @<%= post.username%></h3>
-    <p class="post"> <%= post.content %> </p>
+    <h1 class="logo">Quora <span>Clone</span></h1>
 
-</div>
+    <a href="/posts/new" class="btn">Create Post</a>
 
-<%  } %>
+  </header>
 
+  <main class="container">
 
+    <% for(post of posts) { %>
 
-
-
+      <div class="post-card">
+        <h3 class="user">@<%= post.username %></h3>
+        <p class="content"><%= post.content %></p>
+          <a href="http://localhost:6464/posts/<%= post.id %>" class="btnn">See in details</a>
+      </div>
+    <% } %>
+    
+  </main>
 </body>
 </html>
+
+

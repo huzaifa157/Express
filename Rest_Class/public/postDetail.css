@@ -1,0 +1,138 @@
+ /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            height: 80vh;
+        }
+
+        .card {
+            background: #1e1e2f;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffda79;
+        }
+
+        .post-id {
+            font-size: 14px;
+            color: #bbb;
+            margin-bottom: 10px;
+        }
+
+        .post-id span {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .user {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #74b9ff;
+        }
+
+        .content {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #f1f1f1;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            background: #0984e3;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #74b9ff;
+            transform: translateY(-2px);
+        }
+
+        .edit {
+            background: #fdcb6e;
+            color: #333;
+        }
+
+        .edit:hover {
+            background: #ffeaa7;
+        }
+
+        .delete {
+            background: #d63031;
+        }
+
+        .delete:hover {
+            background: #ff7675;
+        }
+
+        .back-btn {
+            margin-bottom: 20px;
+            align-self: flex-start;
+        }
+
+
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+            }
+            
+            .actions {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
