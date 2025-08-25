@@ -8,14 +8,11 @@
 // Express.js makes it much easier to handle things like:
 
 // Creating routes (/home, /about, /api/users, etc.)
-
 // Handling requests (GET, POST, PUT, DELETE)
-
 // Sending responses (like JSON, HTML, files)
-
 // Using middleware (functions that run between request and response, e.g., logging, authentication).
 
-import express from "express"; // Importing express
+import express from "express"; // Importing express we can require also
 
 const app = express(); // Creating an express application
 

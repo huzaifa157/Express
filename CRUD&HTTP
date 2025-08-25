@@ -2,7 +2,7 @@
 
 CRUD means the 4 basic operations we perform with data in applications:
 
-C → Create
+C → Create:
 
 Add new data.
 Example: Registering a new user, posting a new article.
