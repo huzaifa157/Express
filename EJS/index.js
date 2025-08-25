@@ -43,7 +43,6 @@ app.use(express.static(path.join(__dirname, "public")));
 // What does express.static() do?
 
 // In an Express.js app, you usually want to serve files like: HTML ,CSS ,JavaScript (frontend) ,Images
-
 // These files don’t change on the server — they are called static files.
 // 👉 express.static() is a built-in middleware in Express that tells your app where to look for these static files. it looks on public folder
 
@@ -89,7 +88,6 @@ app.listen(port,()=>{
         //    Tags 
 
 // <%= for Outputs the value into the template (HTML escaped) %>
-
 // <% 'Scriptlet' tag, for control-flow means for loops and condition statements etc, no output %>
 
                                     // include 
